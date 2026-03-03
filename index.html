@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <div class="logo">MY PORTFOLIO.</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container hero-content">
+            <h1 class="hero-title">你好，我是 <span class="highlight">陈铭辉</span></h1>
+            <p class="hero-subtitle">专注于 用户体验 / 视觉设计 / 策划运营</p>
+            <a href="#portfolio" class="btn primary-btn">查看作品</a>
+        </div>
+    </header>
+
+<section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">精选作品</h2>
+            
+            <div class="filter-controls">
+
+                <button class="filter-btn" data-filter="all">精选</button>
+                <button class="filter-btn" data-filter="3D">策划运营</button>
+                <button class="filter-btn" data-filter="web">平面设计</button>
+                <button class="filter-btn" data-filter="video">视频设计</button>
+            </div>
+
+            <div class="portfolio-grid" id="gallery">
+                </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <h2 class="section-title">关于我</h2>
+                <p>这里填写你的个人简介。例如：拥有5年经验的数字艺术家，热衷于极简主义设计。我相信好的设计不仅是视觉上的享受，更是解决问题的工具。</p>
+                <div class="skills-list">
+                    <span>AIGC</span>
+                    <span>UE5</span>
+                    <span>Photoshop</span>
+                    <span>Premiere Pro</span>
+                    <span>Figma</span>
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="assets/cmh.pdf" target="_blank" class="btn primary-btn">
+                        <i class="fas fa-file-pdf" style="margin-right: 8px;"></i> 查看个人简历
+                    </a>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="img-placeholder">个人照片占位</div>
+            </div>
+        </div>
+        
+    </section>
+
+<section id="contact">
+        <div class="container">
+            <h2 class="section-title">取得联系</h2>
+            <p class="contact-desc">有合作意向？欢迎通过以下方式联系我。</p>
+            
+            <div class="social-links">
+                <a href="javascript:void(0)" class="social-btn" id="wechat-btn"><i class="fab fa-weixin"></i></a>
+                
+                <a href="#" class="social-btn"><i class="far fa-envelope"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="email">Email: 2977816574@qq.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
